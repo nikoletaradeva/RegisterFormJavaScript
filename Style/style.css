@@ -1,0 +1,274 @@
+body {
+    background:url(../Images/background.jpg) fixed;
+    background-size: cover;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+/*Header*/
+h1 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color:rgba(242,186,46,1);
+    font-weight: 400;
+    margin: 0.5em 0;
+}
+
+/*Form*/
+.about-bottom {
+    width: 30%;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 2em;
+    position: relative;/*The element is positioned relative to its normal position, so "left:20px" adds 20 pixels to the element's LEFT position*/
+}
+
+.book-form label {
+    font-size: 1em;
+    color: rgba(242,186,46,1);
+    display: block;/*Displays an element as a block element (like <p>). It starts on a new line, and takes up the whole width*/
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+/*span {
+    color: #e60000;
+}*/
+
+.form {
+    text-align: left;
+}
+
+input[type=text], input[type=password],
+input[type=date],input[type=email],
+textarea[type=text]{
+    width: 93%;
+    padding: 15px;
+    margin: 5px 0 15px 0;
+    /*display: inline-block;*/
+    border: 1px solid #555;
+    background: #f1f1f1;
+    font-size: 1.3em;
+}
+
+input[type=text]:focus, input[type=password]:focus,
+input[type=date]:focus,input[type=email],
+textarea[type=text] {
+    background-color: #ddd;
+    outline: none;
+}
+
+input[type=submit],input[type=reset] {
+    outline: none;
+}
+
+div .radio label {
+    font-size: 1.3em;
+    display: inline-block;
+    color: #fff;
+    /*text-transform: none;*/
+}
+
+#paragraph {
+    color: #fff;
+    font-size: 1em;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.checkbox {
+    color: rgba(242,186,46,1);
+    font-size: 1em;
+}
+
+.submitbtn {
+    background-color:rgba(242,186,46,1);
+    font-size: 1.5em;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    text-transform: uppercase;
+}
+
+.submitbtn:hover {
+    opacity: 1;
+}
+
+.resetbtn {
+    background-color:rgba(242,186,46,1);
+    font-size: 1.5em;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+    text-transform: uppercase;
+}
+
+.resetbtn:hover {
+    opacity: 1;
+}
+
+.signin {
+    font-size: 1em;
+    color: white;
+    text-align: center;
+}
+
+a {
+    color: rgba(242,186,46,1);
+}
+
+/*Footer*/
+.footer p {
+    text-align: center;
+    margin: 2em 0 1em;
+    color: black;
+    font-size: 1.3em;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+/*Responsive*/
+@media (max-width: 1200px) {
+    h1 {
+        font-size: 2em;
+    }
+    .about-bottom {
+        width: 87%;
+    }
+    .footer p {
+        font-size: 0.95em;
+    }
+    .submitbtn{
+        font-size: 2em;
+    }
+    .resetbtn{
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 992px) {
+    .about-bottom {
+        width: 47%;
+    }
+    .book-form input[type="text"], .book-form input[type="email"] {
+        width: 91.5%;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-bottom {
+        width: 70%;
+        
+    }
+
+    input[type=text], input[type=password],
+    input[type=date],input[type=email]{
+    font-size: 1.5em;
+    width: 91%;
+}
+
+    input[type=date] {
+        font-size: 2em;
+    }
+
+    .book-form label {
+        font-size: 1.5em;
+    }
+
+    div .radio label{
+        font-size: 1.5em;
+    }
+
+    img {
+        width: 50%;
+    }
+
+    textarea {
+        width: 48%;
+        font-size: 1.5em;
+    }
+
+    #paragraph {
+        font-size: 1.5em;
+    }
+
+    .checkbox {
+    font-size: 1.5em;
+    }
+
+    .signin {
+        font-size: 1.5em;
+    }
+
+    .sumitbtn {
+        font-size: 1.5em;
+        width: 60%;
+    }
+
+    .footer{
+        font-size: 1.5em;
+    }
+    
+}
+@media only screen and (max-width : 640px) {
+    .about-bottom {
+        width: 65%;
+        
+    }
+
+    input[type=text], input[type=password],
+    input[type=date],input[type=email]{
+    font-size: 0.8em;
+    width: 90%;
+}
+
+    input[type=date] {
+        font-size: 1.2em;
+    }
+
+    .book-form label {
+        font-size: 0.8em;
+    }
+
+    div .radio label {
+        font-size: 0.7em;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    textarea {
+        width: 95%;
+    }
+    
+    .checkbox {
+    font-size: 0.8em;
+    }
+
+    .signin {
+        font-size: 0.8em;
+    }
+
+    .submitbtn {
+        font-size: 1em;
+    }
+
+    .resetbtn {
+        font-size: 1em;
+    }
+
+    .footer {
+        font-size: 1em;
+    }
+}
+

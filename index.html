@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en"><!--деклариране на езика на дадена уеб страница или част от уеб страница. Това има за цел да помогне на търсачките и браузъри.-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+	<title>Registration form</title>
+    <link rel="stylesheet" type="text/css" href="Style/style.css" media="all">   
+</head>
+
+<body>   
+<section id="form">
+    <header>
+        <h1>Register Form</h1>
+        <div class="about-bottom book-form">
+            <form id="registerForm" action="index.php" method="GET">
+                <div class="form">
+                    <label for="fname">First name<span>*</span></label>
+                        <input id="fname" type="text" name="fname" placeholder="Enter your first name" maxlength="20">
+                    <label for="lname">Last name<span>*</span></label>
+                        <input id="lname" type="text" name="lname" placeholder="Enter your last name" maxlength="20">
+                    <label for="username">Choose your username<span>*</span></label>
+                        <input id="username" type="text" name="username" placeholder="Username">
+                    <label for="pwd">Create a password<span>*</span></label>
+                        <input id="pwd" type="password" name="pwd" placeholder="Enter your password" >
+                    <label for="pwdrepeat">Confim your password<span>*</span></label>
+                        <input id="pwdrepeat" type="password" name="pwdrepeat" placeholder="Confim your password">
+                    <label>Date of Birth<span>*</span></label>
+                        <input type="date" name="bday">
+                    <label>Gender<span>*</span></label>
+
+                    <div class="radio">
+                        <input id="male" type="radio" name="gender" value="male">
+                        <label for="male">Male</label>
+                
+                        <input id="female" type="radio" name="gender" value="female" >
+                        <label for="female">Female</label>
+                
+                        <input id="other" type="radio" name="gender" value="other" >
+                        <label for="other">Other</label>         
+                    </div>
+
+                    <label for="country">Country<span>*</span></label>
+                        <input id="country" type="text" name="country" placeholder="Enter your country">
+                    <label for="telephone">Mobile phone<span>*</span></label>
+                        <input id="telephone" type="text" name="telephone" placeholder="Phone number" maxlength="10" ><br/>
+                    <label for="email">Your email address<span>*</span></label>
+                        <input id="email" type="email" name="email"  placeholder="you@example.bg">
+                        
+                    <p id="paragraph">Prove you're not a robot</p>
+                    <p class="checkbox"><input id="checkboxfield" type="checkbox" name="robot" value="Robot">Skip this verification(phone verification may be required)</p>
+
+                    <div>
+                        <img id="captcha" src="/Images/captcha.jpg" alt="captcha" width="230" height="55">
+                        <label>Type the text<span>*</span></label>
+                        <textarea id="code" type="text" name="code" maxlength="5" ></textarea><br/>   
+                    </div>
+
+                    <input type="submit" name="submit" class="submitbtn" value="Submit">
+                    <input type="reset"  name="submit" class="resetbtn" value="Reset">
+
+                    <div class="container signin">
+                        <p>Already have an account? <a href="#">Sign in</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </header>
+</section>
+    <footer class="footer">
+        <p>&copy; 2018 Register Form. All rights reserved!This form made by Nikoleta Radeva.</p>
+    </footer>
+    <script src="Script/script.js" type="text/javascript"></script>
+</body>
+</html>
