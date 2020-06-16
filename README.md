@@ -1,1 +1,1 @@
-# RegisterFormJavaScript
+# Register Form JavaScript
